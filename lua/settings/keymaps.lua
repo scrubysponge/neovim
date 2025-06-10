@@ -50,9 +50,15 @@ keySet("n", "<leader>gi", vim.lsp.buf.implementation, { desc = "Go to implementa
 keySet("n", "gK", vim.diagnostic.open_float, { desc = "Open diagnostic float" })
 
 -- tab keymaps
-keySet({ "n", "x" }, "<leader>tc", "<cmd>tabnew<cr>", { desc = "New tab" })
-keySet({ "n", "x" }, "<leader>tx", "<cmd>tabclose<cr>", { desc = "Close tab" })
-keySet({ "n", "x" }, "<leader>tm", ":tabm ", { desc = "Move tab" })
+keySet({ "n", "x" }, "<leader>Tn", "<cmd>tabnew<cr>", { desc = "New tab" })
+keySet({ "n", "x" }, "<leader>Tx", "<cmd>tabclose<cr>", { desc = "Close tab" })
+keySet({ "n", "x" }, "<leader>Tm", ":tabmove", { desc = "Move tab" })
+
+-- terminal mode
+keySet({ "n", "v" }, "<leader>to", "<cmd>terminal<cr>", { desc = "Open terminal" })
+keySet({ "n", "v" }, "<leader>tn", "<cmd>tabnew | terminal<cr>", { desc = "Open terminal (new tab)" })
+keySet({ "n", "v" }, "<leader>ts", "<cmd>sp | terminal<cr>", { desc = "Open terminal (horizonal split)" })
+keySet({ "n", "v" }, "<leader>tv", "<cmd>vsp | terminal<cr>", { desc = "Open terminal (vertical split)" })
 
 -- save sessions
-keySet("n", "<m-s>", ":mks! ", { desc = "Save session (must be a .vim file)" })
+keySet("n", "<m-s>", ":mks! ", { desc = "Save session" })
