@@ -44,6 +44,7 @@ return {
 				bash = { "shellcheck" },
 				-- css = { "stylelint" },
 				groovy = { "npm-groovy-lint" },
+				typescript = { "eslint_d" }
 			}
 
 			-- automatically try to lint

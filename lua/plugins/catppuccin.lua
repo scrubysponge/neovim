@@ -12,7 +12,10 @@ return {
 			},
 
 			color_overrides = {
-				mocha = { lavender = "#f558d3", },
+				mocha = {
+					lavender = "#f558d3",
+					base = "#1e1e2e"
+				},
 			},
 
 			default_integrations = true,
