@@ -3,8 +3,10 @@ return {
 	opts = {
 		formatters_by_ft = {
 			lua = { "stylua" },
-			typescript = { "prettierd" },
 			python = { "black" },
+			typescript = { "prettierd" },
+			yaml = { "prettierd" },
+			groovy = { "npm-groovy-lint" },
 		},
 
 		format_on_save = {
