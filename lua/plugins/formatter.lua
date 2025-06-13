@@ -4,6 +4,7 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 			typescript = { "prettierd" },
+			python = { "black" },
 		},
 
 		format_on_save = {
