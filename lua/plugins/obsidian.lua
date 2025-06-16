@@ -1,13 +1,13 @@
 local workspaces = {
 	{
 		name = "personal",
-		path = "/windows/obsidian/"
+		path = "/windows/obsidian/",
 	},
 
 	{
 		name = "external drive",
-		path = "/run/media/scrub/One Touch/scrub stuff/obsidian"
-	}
+		path = "/run/media/scrub/One Touch/scrub stuff/obsidian",
+	},
 }
 
 -- Check if a file or directory exists in this path
@@ -49,6 +49,6 @@ return {
 		disable_frontmatter = true,
 
 		-- requires fzf-lua
-		picker = { "fzf-lua" }
-	}
+		picker = { "snacks.nvim" },
+	},
 }
