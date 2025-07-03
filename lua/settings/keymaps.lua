@@ -52,7 +52,7 @@ keySet("n", "gK", vim.diagnostic.open_float, { desc = "Open diagnostic float" })
 -- tab keymaps
 keySet({ "n", "x" }, "<leader>Tn", "<cmd>tabnew<cr>", { desc = "New tab" })
 keySet({ "n", "x" }, "<leader>Tx", "<cmd>tabclose<cr>", { desc = "Close tab" })
-keySet({ "n", "x" }, "<leader>Tm", ":tabmove", { desc = "Move tab" })
+keySet({ "n", "x" }, "<leader>Tm", ":tabmove ", { desc = "Move tab" })
 
 -- terminal mode
 keySet({ "n", "v" }, "<leader>to", "<cmd>terminal<cr>", { desc = "Open terminal" })
