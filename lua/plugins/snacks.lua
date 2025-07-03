@@ -24,14 +24,14 @@ return {
 		{
 			"<leader>\\",
 			function()
-				Snacks.picker.files()
+				Snacks.picker.files({ hidden = true })
 			end,
 			desc = "find files",
 		},
 		{
 			"<leader>,",
 			function()
-				Snacks.picker.buffers()
+				Snacks.picker.buffers({ hidden = true })
 			end,
 			desc = "buffers",
 		},
