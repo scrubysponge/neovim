@@ -62,3 +62,13 @@ keySet({ "n", "v" }, "<leader>tv", "<cmd>vsp | terminal<cr>", { desc = "Open ter
 
 -- save sessions
 keySet("n", "<m-s>", ":mks! ", { desc = "Save session" })
+
+-- toggle conceallevel
+keySet({ "n", "v" }, "<m-->", function()
+	local o = vim.opt
+	if o.conceallevel:get() == 0 then
+		o.conceallevel = 2
+	else
+		o.conceallevel = 0
+	end
+end, { desc = "toggle conceallevel" })
