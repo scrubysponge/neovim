@@ -31,7 +31,7 @@ return {
 		{
 			"<leader>,",
 			function()
-				Snacks.picker.buffers({ hidden = true })
+				Snacks.picker.buffers()
 			end,
 			desc = "buffers",
 		},
