@@ -42,13 +42,24 @@ return {
 	version = "*",
 	dependencies = { "nvim-lua/plenary.nvim" },
 
+	keys = {
+		{ mode = "n", "<leader>on", "<cmd>ObsidianQuickSwitch<cr>", desc = "Obsidian - switch notes" },
+		{ mode = "n", "<leader>ow", "<cmd>ObsidianWorkspace<cr>", desc = "Obsidian - switch workspaces" },
+		{ mode = "n", "<leader>ot", "<cmd>ObsidianTags<cr>", desc = "Obsidian - search tags" },
+		{ mode = "n", "<leader>oa", "<cmd>ObsidianTOC<cr>", desc = "Obsidian - search headings" },
+		{ mode = "n", "<leader>ol", "<cmd>ObsidianLinks<cr>", desc = "Obsidian - search links" },
+		{ mode = "n", "<leader>ob", "<cmd>ObsidianBacklinks<cr>", desc = "Obsidian - search backlinks" },
+		{ mode = "n", "<leader>og", "<cmd>ObsidianSearch<cr>", desc = "Obsidian - grep workspace" },
+		{ mode = "n", "<leader>op", "<cmd>ObsidianPasteImg<cr>", desc = "Obsidian - paste image" },
+		{ mode = "n", "<leader>orr", "<cmd>ObsidianRename<cr>", desc = "Obsidian - rename current file" },
+	},
+
 	opts = {
 		workspaces = genWorkspaces(workspaces),
 		new_notes_location = "current_dir",
 		preferred_link_style = "markdown",
 		disable_frontmatter = true,
 
-		-- requires fzf-lua
 		picker = { "snacks.nvim" },
 	},
 }

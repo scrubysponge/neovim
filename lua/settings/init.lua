@@ -1,5 +1,4 @@
 require("settings.options")
 require("settings.options-plugins")
 require("settings.keymaps")
-require("settings.keymaps-plugins")
 require("settings.autocmds")

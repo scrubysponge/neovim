@@ -1,6 +1,12 @@
 -- :h lspconfig-all to see list of all LSP configs
 return {
-	{ "mason-org/mason.nvim", opts = {} },
+	{
+		"mason-org/mason.nvim",
+		keys = {
+			{ mode = "n", "<leader>M", "<cmd>Mason<cr>", desc = "Open Mason menu" },
+		},
+		opts = {},
+	},
 
 	{
 		"mason-org/mason-lspconfig.nvim",
