@@ -5,6 +5,7 @@ return {
 			lua = { "stylua" },
 			python = { "black" },
 			typescript = { "prettierd" },
+			javascript = { "prettierd" },
 			yaml = { "prettierd" },
 			groovy = { "npm-groovy-lint" },
 		},
