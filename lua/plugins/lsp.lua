@@ -1,17 +1,4 @@
 -- :h lspconfig-all to see list of all LSP configs
-local function lua_ls_config()
-	return function()
-		local lspconfig = require("lspconfig")
-		lspconfig.lua_ls.setup {
-			settings = {
-				Lua = {
-					diagnostics = { globals = { "vim" } }
-				}
-			}
-		}
-	end
-end
-
 return {
 	{ "mason-org/mason.nvim", opts = {} },
 
@@ -19,15 +6,7 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		opts = {
 			ensure_installed = { "lua_ls" },
-
-			handlers = {
-				function(server_name)
-					require("lspconfig")[server_name].setup {}
-				end,
-
-				["lua_ls"] = lua_ls_config()
-			}
-		}
+		},
 	},
 
 	"neovim/nvim-lspconfig",
@@ -43,8 +22,9 @@ return {
 				-- markdown = { "markdownlint" },
 				bash = { "shellcheck" },
 				-- css = { "stylelint" },
-				groovy = { "npm-groovy-lint" },
-				typescript = { "eslint_d" }
+				-- groovy = { "npm-groovy-lint" },
+				typescript = { "eslint_d" },
+				javascript = { "eslint_d" },
 			}
 
 			-- automatically try to lint
@@ -54,9 +34,9 @@ return {
 				callback = function()
 					-- runs the linters specified in linters_by_ft
 					require("lint").try_lint()
-				end
+				end,
 			})
-		end
+		end,
 	},
 
 	{
@@ -65,6 +45,6 @@ return {
 			-- ensure_installed = {
 			-- 	"markdownlint"
 			-- }
-		}
-	}
+		},
+	},
 }

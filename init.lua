@@ -40,3 +40,10 @@ require("lazy").setup({
 
 -- open lazy menu
 vim.keymap.set("n", "<leader>L", "<cmd>Lazy<cr>", { desc = "Open Lazy menu" })
+
+-- setup lua lsp
+vim.lsp.config("lua_ls", {
+	settings = {
+		Lua = { diagnostics = { globals = { "vim" } } },
+	},
+})
