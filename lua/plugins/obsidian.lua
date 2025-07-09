@@ -59,7 +59,6 @@ return {
 		new_notes_location = "current_dir",
 		preferred_link_style = "markdown",
 		disable_frontmatter = true,
-
 		picker = { "snacks.nvim" },
 	},
 }
