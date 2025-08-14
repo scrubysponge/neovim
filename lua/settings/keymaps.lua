@@ -41,7 +41,8 @@ keySet({ "n", "i", "x" }, "<m-l>", "<c-w>>", { desc = "Resize window to the righ
 keySet({ "n", "i", "x" }, "<m-;>", "<c-w>=", { desc = "Equalize window sizes" })
 
 -- buffer switching
-keySet("n", "<leader>bs", "<cmd>ls<cr>:b ", { desc = "List and switch buffers" })
+keySet("n", "<leader>bs", "<cmd>ls<cr>:b ", { desc = "Switch buffers" })
+keySet("n", "<leader>bd", "<cmd>ls<cr>:b ", { desc = "Delete buffer" })
 
 -- LSP
 keySet("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
