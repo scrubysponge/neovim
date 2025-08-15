@@ -1,7 +1,7 @@
--- NOTE: neovim treesitter is experimental
+-- NOTE: switch to main branch when ready
 return {
 	"nvim-treesitter/nvim-treesitter",
-	branch = "main",
+	branch = "master",
 	lazy = false,
 	build = ":TSUpdate",
 	event = "BufReadPre",
