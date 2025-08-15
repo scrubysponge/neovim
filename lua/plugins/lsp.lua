@@ -17,6 +17,7 @@ return {
 				-- indicate linters to use here
 				--
 				-- markdown = { "markdownlint" },
+				lua = { "luacheck" },
 				bash = { "shellcheck" },
 				-- css = { "stylelint" },
 				-- groovy = { "npm-groovy-lint" },
