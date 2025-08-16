@@ -43,6 +43,7 @@ return {
 	dependencies = { "nvim-lua/plenary.nvim" },
 
 	keys = {
+		{ mode = "n", "<leader>o:", "<cmd>Obsidian<cr>", desc = "Obsidian - all commands" },
 		{ mode = "n", "<leader>on", "<cmd>Obsidian quick_switch<cr>", desc = "Obsidian - switch notes" },
 		{ mode = "n", "<leader>ow", "<cmd>Obsidian workspace<cr>", desc = "Obsidian - switch workspaces" },
 		{ mode = "n", "<leader>ot", "<cmd>Obsidian tags<cr>", desc = "Obsidian - search tags" },
