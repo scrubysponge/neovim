@@ -26,7 +26,7 @@ end
 local function genWorkspaces(workspaces)
 	local available_workspaces = {} -- to be filled with paths that are available
 
-	for i, ws in ipairs(workspaces) do
+	for _, ws in ipairs(workspaces) do
 		if exists(ws.path) then
 			table.insert(available_workspaces, ws)
 		end
@@ -43,15 +43,15 @@ return {
 	dependencies = { "nvim-lua/plenary.nvim" },
 
 	keys = {
-		{ mode = "n", "<leader>on", "<cmd>ObsidianQuickSwitch<cr>", desc = "Obsidian - switch notes" },
-		{ mode = "n", "<leader>ow", "<cmd>ObsidianWorkspace<cr>", desc = "Obsidian - switch workspaces" },
-		{ mode = "n", "<leader>ot", "<cmd>ObsidianTags<cr>", desc = "Obsidian - search tags" },
-		{ mode = "n", "<leader>oa", "<cmd>ObsidianTOC<cr>", desc = "Obsidian - search headings" },
-		{ mode = "n", "<leader>ol", "<cmd>ObsidianLinks<cr>", desc = "Obsidian - search links" },
-		{ mode = "n", "<leader>ob", "<cmd>ObsidianBacklinks<cr>", desc = "Obsidian - search backlinks" },
-		{ mode = "n", "<leader>og", "<cmd>ObsidianSearch<cr>", desc = "Obsidian - grep workspace" },
-		{ mode = "n", "<leader>op", "<cmd>ObsidianPasteImg<cr>", desc = "Obsidian - paste image" },
-		{ mode = "n", "<leader>orr", "<cmd>ObsidianRename<cr>", desc = "Obsidian - rename current file" },
+		{ mode = "n", "<leader>on", "<cmd>Obsidian quick_switch<cr>", desc = "Obsidian - switch notes" },
+		{ mode = "n", "<leader>ow", "<cmd>Obsidian workspace<cr>", desc = "Obsidian - switch workspaces" },
+		{ mode = "n", "<leader>ot", "<cmd>Obsidian tags<cr>", desc = "Obsidian - search tags" },
+		{ mode = "n", "<leader>oa", "<cmd>Obsidian toc<cr>", desc = "Obsidian - search headings" },
+		{ mode = "n", "<leader>ol", "<cmd>Obsidian links<cr>", desc = "Obsidian - search links" },
+		{ mode = "n", "<leader>ob", "<cmd>Obsidian backlinks<cr>", desc = "Obsidian - search backlinks" },
+		{ mode = "n", "<leader>og", "<cmd>Obsidian search<cr>", desc = "Obsidian - grep workspace" },
+		{ mode = "n", "<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Obsidian - paste image" },
+		{ mode = "n", "<leader>orr", "<cmd>Obsidian rename<cr>", desc = "Obsidian - rename current file" },
 	},
 
 	opts = {
