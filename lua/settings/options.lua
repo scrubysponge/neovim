@@ -31,7 +31,7 @@ opt.showmode = false
 -- save undo history
 opt.undofile = true
 
--- case-insensitive searching 
+-- case-insensitive searching
 opt.ignorecase = true
 
 -- case-insensitive searching unless \C or one or more capital letters in the search term
@@ -60,3 +60,5 @@ opt.backup = false
 
 opt.conceallevel = 2
 
+-- scroll <c-d>/<c-u> by visual lines instead of line numbers
+opt.smoothscroll = true

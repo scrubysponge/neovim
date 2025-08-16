@@ -40,6 +40,12 @@ keySet({ "n", "i", "x" }, "<m-k>", "<c-w>+", { desc = "Increase window height" }
 keySet({ "n", "i", "x" }, "<m-l>", "<c-w>>", { desc = "Resize window to the right" })
 keySet({ "n", "i", "x" }, "<m-;>", "<c-w>=", { desc = "Equalize window sizes" })
 
+-- movement
+keySet("n", "<c-d>", "<c-d>zz")
+keySet("n", "<c-u>", "<c-u>zz")
+keySet("n", "<c-f>", "<c-f>zz")
+keySet("n", "<c-b>", "<c-b>zz")
+
 -- buffer switching
 keySet("n", "<leader>bs", "<cmd>ls<cr>:b ", { desc = "Switch buffers" })
 keySet("n", "<leader>bd", "<cmd>ls<cr>:b ", { desc = "Delete buffer" })
