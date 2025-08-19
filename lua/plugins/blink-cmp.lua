@@ -23,26 +23,26 @@ return {
 			default = { "lsp", "path", "snippets", "buffer" },
 
 			per_filetype = {
-				text = { "dictionary", "thesaurus" },
-				markdown = { "dictionary", "thesaurus" },
+				text = { "dictionary", },
+				markdown = { "dictionary", },
 			},
 
 			providers = {
-				thesaurus = {
-					name = "blink-cmp-words",
-					module = "blink-cmp-words.thesaurus",
-					-- All available options
-					opts = {
-						-- A score offset applied to returned items.
-						-- By default the highest score is 0 (item 1 has a score of -1, item 2 of -2 etc..).
-						score_offset = 0,
-
-						-- Default pointers define the lexical relations listed under each definition,
-						-- see Pointer Symbols below.
-						-- Default is as below ("antonyms", "similar to" and "also see").
-						pointer_symbols = { "!", "&", "^" },
-					},
-				},
+				-- thesaurus = {
+				-- 	name = "blink-cmp-words",
+				-- 	module = "blink-cmp-words.thesaurus",
+				-- 	-- All available options
+				-- 	opts = {
+				-- 		-- A score offset applied to returned items.
+				-- 		-- By default the highest score is 0 (item 1 has a score of -1, item 2 of -2 etc..).
+				-- 		score_offset = 0,
+				--
+				-- 		-- Default pointers define the lexical relations listed under each definition,
+				-- 		-- see Pointer Symbols below.
+				-- 		-- Default is as below ("antonyms", "similar to" and "also see").
+				-- 		pointer_symbols = { "!", "&", "^" },
+				-- 	},
+				-- },
 
 				dictionary = {
 					name = "blink-cmp-words",
