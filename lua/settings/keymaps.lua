@@ -8,7 +8,7 @@ keySet("n", "<esc>", "<cmd>noh<cr>", { desc = "Remove search highlight" })
 keySet({ "n", "i", "x" }, "<c-s>", "<cmd>w<cr>", { desc = "Save file" })
 
 -- quit
-keySet("n", "QQ", "<cmd>wqa<cr>", { desc = "Quit and save all buffers" })
+keySet("n", "QQ", ":wa<cr><cmd>qa<cr>", { desc = "Quit and save all buffers" })
 keySet("n", "QZ", "<cmd>qa!<cr>", { desc = "Quit without saving buffers" })
 
 -- copy selected text to clipboard in visual mode
