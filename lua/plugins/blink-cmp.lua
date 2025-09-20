@@ -53,7 +53,7 @@ return {
 						-- Set this higher if completion is slow, 3 is default.
 						dictionary_search_threshold = 3,
 						score_offset = 0,
-						pointer_symbols = { "!", "&", "^" },
+						definition_pointers = { "!", "&", "^" },
 					},
 				},
 			},
