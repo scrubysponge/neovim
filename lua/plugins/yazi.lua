@@ -32,7 +32,9 @@ return {
 		open_for_directories = true,
 		keymaps = {
 			show_help = "~",
-			cycle_open_buffers = "<f2>"
+			cycle_open_buffers = "<f2>",
+			open_file_in_vertical_split = "<c-s>",
+			grep_in_directory = "<c-f>",
 		},
 	},
 
