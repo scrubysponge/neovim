@@ -32,6 +32,7 @@ return {
 				-- groovy = { "npm-groovy-lint" },
 				typescript = { "eslint_d" },
 				javascript = { "eslint_d" },
+				yaml = { "actionlint" },
 			}
 
 			-- automatically try to lint
