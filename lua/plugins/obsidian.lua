@@ -52,14 +52,14 @@ return {
 		{ mode = "n", "<leader>ob", "<cmd>Obsidian backlinks<cr>", desc = "Obsidian - search backlinks" },
 		{ mode = "n", "<leader>og", "<cmd>Obsidian search<cr>", desc = "Obsidian - grep workspace" },
 		{ mode = "n", "<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Obsidian - paste image" },
-		{ mode = "n", "<leader>orr", "<cmd>Obsidian rename<cr>", desc = "Obsidian - rename current file" },
+		{ mode = "n", "<leader>or", "<cmd>Obsidian rename<cr>", desc = "Obsidian - rename current file" },
 	},
 
 	opts = {
 		workspaces = genWorkspaces(workspaces),
 		new_notes_location = "current_dir",
 		preferred_link_style = "markdown",
-		disable_frontmatter = true,
+		frontmatter = { enabled = false },
 		picker = { "snacks.nvim" },
 	},
 }
