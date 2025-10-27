@@ -33,7 +33,8 @@ return {
 		keymaps = {
 			show_help = "~",
 			cycle_open_buffers = "<f2>",
-			open_file_in_vertical_split = "<c-s>",
+			open_file_in_vertical_split = "<c-v>",
+			open_file_in_horizontal_split = "<c-s>",
 			grep_in_directory = "<c-f>",
 		},
 	},
