@@ -79,3 +79,6 @@ keySet({ "n", "v" }, "<m-->", function()
 		o.conceallevel = 0
 	end
 end, { desc = "toggle conceallevel" })
+
+-- open quickfix list
+keySet("n", "qf", ":copen<cr>", { desc = "Open quickfix list" })
